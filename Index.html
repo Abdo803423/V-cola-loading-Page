@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>V-Cola · من مصر إلى العالم</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <img src="logo.png" class="logo" alt="V-Cola"
+         onerror="this.src='https://via.placeholder.com/150x50/05102e/c9a84c?text=V-Cola'">
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#products">منتجاتنا</a>
+      <a href="#features">المميزات</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#news">أخبار</a>
+      <a href="#contact">تواصل</a>
+    </div>
+    <a href="#products" class="nav-cta">تسوق الآن</a>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ══ HERO ══ -->
+  <section id="home" class="hero">
+    <div class="hero-text" data-aos="slide-right">
+      <div class="hero-eyebrow">مشروب العام ٢٠٢٥</div>
+      <h1 class="hero-headline">من مصر</h1>
+      <div class="hero-headline-sub">إلى العالم</div>
+      <div class="hero-rule"></div>
+      <p class="hero-desc">
+        مشروب طبيعي ١٠٠٪ بنكهة رائعة وفوائد استثنائية — بدون مواد حافظة، معزز بالمناعة، وغني بأجود الفيتامينات.
+      </p>
+      <div class="btn-group">
+        <a href="#products" class="btn-gold"><i class="fas fa-shopping-bag"></i> اكتشف التشكيلة</a>
+        <a href="#" class="btn-ghost"><i class="fas fa-play-circle"></i> شاهد الفيديو</a>
+      </div>
+      <div class="trust-strip">
+        <div class="trust-item">
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i>
+          <strong>٤.٩</strong>
+        </div>
+        <div class="trust-item"><i class="fas fa-users gold"></i> <strong>+١ مليون</strong> عميل</div>
+        <div class="trust-item"><i class="fas fa-award gold"></i> <strong>١٥</strong> جائزة دولية</div>
+      </div>
+      <div class="social-hero">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-can" data-aos="slide-left">
+      <div class="can-halo"></div>
+      <img class="can-img" src="can1.png" alt="V-Cola"
+           onerror="this.src='https://via.placeholder.com/440x660/05102e/c9a84c?text=V-Cola'">
+    </div>
+
+    <div class="scroll-cue" id="scrollCue">
+      <span>استكشف</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ══ -->
+  <section class="benefits-section">
+    <div class="marquee">
+      <span class="marquee-item"><i class="fas fa-leaf"></i> ١٠٠٪ طبيعي</span>
+      <span class="marquee-item"><i class="fas fa-ban"></i> بدون مواد حافظة</span>
+      <span class="marquee-item"><i class="fas fa-shield-alt"></i> معزز للمناعة</span>
+      <span class="marquee-item"><i class="fas fa-droplet"></i> عسل النحل الأصيل</span>
+      <span class="marquee-item"><i class="fas fa-flask"></i> فيتامينات طبيعية</span>
+      <span class="marquee-item"><i class="fas fa-heart"></i> صحي ولذيذ</span>
+      <span class="marquee-item"><i class="fas fa-bolt"></i> طاقة طبيعية</span>
+      <span class="marquee-item"><i class="fas fa-mug-saucer"></i> خالٍ من الكافيين</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item"><i class="fas fa-leaf"></i> ١٠٠٪ طبيعي</span>
+      <span class="marquee-item"><i class="fas fa-ban"></i> بدون مواد حافظة</span>
+      <span class="marquee-item"><i class="fas fa-shield-alt"></i> معزز للمناعة</span>
+      <span class="marquee-item"><i class="fas fa-droplet"></i> عسل النحل الأصيل</span>
+      <span class="marquee-item"><i class="fas fa-flask"></i> فيتامينات طبيعية</span>
+      <span class="marquee-item"><i class="fas fa-heart"></i> صحي ولذيذ</span>
+      <span class="marquee-item"><i class="fas fa-bolt"></i> طاقة طبيعية</span>
+      <span class="marquee-item"><i class="fas fa-mug-saucer"></i> خالٍ من الكافيين</span>
+    </div>
+  </section>
+
+  <!-- ══ STATS ══ -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-numwrap">
+          <span class="stat-number" data-target="1" data-suffix="M+">0</span>
+        </div>
+        <div class="stat-label">عميل سعيد</div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon"><i class="fas fa-store"></i></div>
+        <div class="stat-numwrap">
+          <span class="stat-number" data-target="500" data-suffix="+">0</span>
+        </div>
+        <div class="stat-label">نقطة بيع</div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+        <div class="stat-numwrap">
+          <span class="stat-number" data-target="15" data-suffix="">0</span>
+        </div>
+        <div class="stat-label">جائزة عالمية</div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-icon"><i class="fas fa-flask"></i></div>
+        <div class="stat-numwrap">
+          <span class="stat-number" data-target="100" data-suffix="%">0</span>
+        </div>
+        <div class="stat-label">طبيعي</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRODUCTS ══ -->
+  <section id="products" class="products-section">
+    <div class="sec-header" data-aos="fade-up">
+      <span class="sec-eyebrow">تشكيلتنا الحصرية</span>
+      <h2 class="sec-title">اختر <em>نكهتك</em></h2>
+      <span class="sec-rule"></span>
+      <p class="sec-sub">ثلاث نكهات فريدة، مصنوعة بأجود المكونات الطبيعية</p>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="product-badge">الأكثر مبيعاً</span>
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/VSS.webp" alt="V-Cola Original" class="product-img">
+        <h3 class="product-name">V-Cola Original</h3>
+        <div class="product-price">$2.99</div>
+        <p class="product-desc">النكهة الكلاسيكية الأصيلة التي يعشقها الجميع</p>
+        <div class="product-tags"><span>0% سكر</span><span>طبيعي</span><span>منعش</span></div>
+        <button class="btn-product"><i class="fas fa-bag-shopping"></i> أضف إلى السلة</button>
+      </div>
+
+      <div class="product-card featured" data-aos="fade-up" data-aos-delay="120">
+        <span class="product-badge">جديد</span>
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/VSS-Diet.webp" alt="V-Cola Zero" class="product-img">
+        <h3 class="product-name">V-Cola Zero</h3>
+        <div class="product-price">$2.99</div>
+        <p class="product-desc">نفس المذاق الاستثنائي بصفر سعرات حرارية</p>
+        <div class="product-tags"><span>0 سعرات</span><span>دايت</span><span>خفيف</span></div>
+        <button class="btn-product"><i class="fas fa-bag-shopping"></i> أضف إلى السلة</button>
+      </div>
+
+      <div class="product-card" data-aos="fade-up" data-aos-delay="240">
+        <span class="product-badge">محدود</span>
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/Malt.webp" alt="V-Cola Gold" class="product-img">
+        <h3 class="product-name">V-Cola Gold</h3>
+        <div class="product-price">$3.99</div>
+        <p class="product-desc">خلاصة أجود أنواع العسل الملكي المصري الأصيل</p>
+        <div class="product-tags"><span>عسل نحل</span><span>ذهبي</span><span>فاخر</span></div>
+        <button class="btn-product"><i class="fas fa-bag-shopping"></i> أضف إلى السلة</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FEATURES ══ -->
+  <section id="features" class="features-section">
+    <div class="features-inner">
+      <div class="features-text" data-aos="slide-right">
+        <span class="sec-eyebrow">لماذا V-Cola؟</span>
+        <h2 class="sec-title">مميزات<br><em>استثنائية</em></h2>
+        <span class="sec-rule"></span>
+        <p>نحن لا نصنع مجرد مشروب — نحن نصنع تجربة صحية متكاملة تجمع بين المذاق الرائع والفوائد الطبيعية التي يحتاجها جسمك.</p>
+        <a href="#products" class="btn-gold" style="margin-top:2.5rem">اكتشف التشكيلة <i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div class="features-cards" data-aos="slide-left">
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-leaf"></i></div>
+          <div class="feat-body"><h3>١٠٠٪ طبيعي</h3><p>مكونات طبيعية بالكامل، بدون أي مواد اصطناعية أو صناعية</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-ban"></i></div>
+          <div class="feat-body"><h3>بدون مواد حافظة</h3><p>منتج صحي وآمن تماماً لك ولجميع أفراد عائلتك</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="feat-body"><h3>معزز للمناعة</h3><p>غني بالفيتامينات والمعادن الضرورية لتعزيز مناعتك</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-droplet"></i></div>
+          <div class="feat-body"><h3>عسل نحل مصري</h3><p>أجود أنواع العسل المصري الطبيعي الأصيل في كل رشفة</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GALLERY ══ -->
+  <section id="gallery" class="gallery-section">
+    <div class="sec-header" data-aos="fade-up">
+      <span class="sec-eyebrow">لحظات V-Cola</span>
+      <h2 class="sec-title">المعرض <em>البصري</em></h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="g-item g-large">
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/VSS.webp" alt="V-Cola Original"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#05102e,#0d2ba8)'">
+        <div class="g-overlay"><span>V-Cola Original</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/VSS-Diet.webp" alt="V-Cola Zero"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#0a1e8c,#c9a84c)'">
+        <div class="g-overlay"><span>V-Cola Zero</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/Malt.webp" alt="V-Cola Gold"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#c9a84c,#05102e)'">
+        <div class="g-overlay"><span>V-Cola Gold</span></div>
+      </div>
+      <div class="g-item g-wide">
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/VSS.webp" alt="V-Cola lineup"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#070f3e,#c9a84c)'">
+        <div class="g-overlay"><span>التشكيلة الكاملة</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://v7-benefits.com/wp-content/uploads/2025/03/VSS-Diet.webp" alt="V-Cola lifestyle"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#0d2ba8,#e8c96a)'">
+        <div class="g-overlay"><span>أسلوب حياة صحي</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIALS ══ -->
+  <section class="testimonials-section">
+    <div class="sec-header" data-aos="fade-up">
+      <span class="sec-eyebrow">آراء العملاء</span>
+      <h2 class="sec-title">ماذا <em>يقولون</em></h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="testi-mark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">أفضل مشروب طبيعي جربته في حياتي. النكهة رائعة والفوائد واضحة على صحتي.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">أ</div>
+          <div><div class="testi-name">أحمد محمد</div><div class="testi-role">عميل منذ ٢٠٢٣</div></div>
+        </div>
+      </div>
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="testi-mark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">منتجات رائعة وفريق محترف. أنصح به كل من يبحث عن الصحة والمذاق معاً.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">س</div>
+          <div><div class="testi-name">سارة عبدالله</div><div class="testi-role">خبيرة تغذية</div></div>
+        </div>
+      </div>
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="testi-mark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">فخر مصري بجودة عالمية حقيقية. هذا هو المشروب الذي انتظرناه طويلاً.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">م</div>
+          <div><div class="testi-name">محمد علي</div><div class="testi-role">رائد أعمال</div></div>
+        </div>
+      </div>
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="300">
+        <span class="testi-mark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">أطفالي يحبونه كثيراً وأنا مطمئنة على صحتهم — طبيعي ١٠٠٪ وآمن تماماً.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">ن</div>
+          <div><div class="testi-name">نورا إبراهيم</div><div class="testi-role">ربة منزل</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FAQ ══ -->
+  <section class="faq-section">
+    <div class="sec-header" data-aos="fade-up">
+      <span class="sec-eyebrow">الأسئلة الشائعة</span>
+      <h2 class="sec-title">هل لديك <em>سؤال؟</em></h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="faq-list" data-aos="fade-up">
+      <div class="faq-item">
+        <div class="faq-q"><span>هل V-Cola مناسب للأطفال؟</span><span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+        <div class="faq-a"><p>نعم! مصنوع من مكونات طبيعية ١٠٠٪ وخالٍ من الكافيين، مما يجعله مناسباً للأطفال فوق سن ٣ سنوات.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>أين يمكنني شراء V-Cola؟</span><span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+        <div class="faq-a"><p>متوفر في أكثر من ٥٠٠ نقطة بيع، منها كارفور ومترو وهايبر ون، إضافة إلى متجرنا الإلكتروني.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>هل يحتوي على سكر مضاف؟</span><span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+        <div class="faq-a"><p>النسخة الأصلية تحتوي على نسبة منخفضة من سكر القصب الطبيعي، بينما V-Cola Zero خالٍ تماماً من السكر.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>ما مدة الصلاحية بدون مواد حافظة؟</span><span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+        <div class="faq-a"><p>١٢ شهراً من تاريخ التصنيع، بفضل تقنية التعقيم الحراري الطبيعية دون أي مواد حافظة اصطناعية.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>هل تشحنون خارج مصر؟</span><span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+        <div class="faq-a"><p>نعم، نشحن إلى دول الخليج والمملكة المتحدة وأوروبا. تواصل معنا لمعرفة تفاصيل الشحن الدولي.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NEWS ══ -->
+  <section id="news" class="news-section">
+    <div class="sec-header" data-aos="fade-up">
+      <span class="sec-eyebrow">آخر المستجدات</span>
+      <h2 class="sec-title">من <em>أخبارنا</em></h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="news-date">مارس ٢٠٢٥</div>
+        <div class="news-icon"><i class="fas fa-sun"></i></div>
+        <h3>نكهة الصيف المحدودة</h3>
+        <p>مانجو وباشن فروت — تجربة استوائية فريدة لفصل الصيف هذا العام</p>
+        <a href="#" class="news-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div class="news-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="news-date">فبراير ٢٠٢٥</div>
+        <div class="news-icon"><i class="fas fa-trophy"></i></div>
+        <h3>جائزة التميز الإقليمية</h3>
+        <p>أفضل مشروب طبيعي في الشرق الأوسط للعام الثاني على التوالي</p>
+        <a href="#" class="news-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div class="news-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="news-date">يناير ٢٠٢٥</div>
+        <div class="news-icon"><i class="fas fa-store"></i></div>
+        <h3>توسع في نقاط البيع</h3>
+        <p>متوفر الآن في كارفور ومترو وهايبر ون و+٥٠٠ نقطة بيع في مصر</p>
+        <a href="#" class="news-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NEWSLETTER ══ -->
+  <section class="newsletter-section" data-aos="fade-up">
+    <div class="newsletter-inner">
+      <span class="sec-eyebrow">النشرة البريدية</span>
+      <h2 class="sec-title" style="font-size:2.4rem">ابقَ على <em>اطلاع</em></h2>
+      <p>آخر العروض والنكهات الجديدة والخصومات الحصرية مباشرة إلى بريدك</p>
+      <form class="nl-form" id="nlForm">
+        <input type="email" class="nl-input" placeholder="بريدك الإلكتروني" required>
+        <button type="submit" class="nl-btn"><i class="fas fa-paper-plane"></i> اشتراك</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="contact" class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="V-Cola" onerror="this.src='https://via.placeholder.com/150x46/05102e/c9a84c?text=V-Cola'">
+        <p>مشروب طبيعي ١٠٠٪ صنع في مصر بكل فخر وإرادة ليصل إلى العالم.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>روابط</h5>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#products">منتجاتنا</a></li>
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#news">الأخبار</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>الدعم</h5>
+        <ul>
+          <li><a href="#">الأسئلة الشائعة</a></li>
+          <li><a href="#">سياسة الخصوصية</a></li>
+          <li><a href="#">الشروط والأحكام</a></li>
+          <li><a href="#">سياسة الإرجاع</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>تواصل معنا</h5>
+        <ul class="footer-contacts">
+          <li><i class="fas fa-map-marker-alt"></i> القاهرة، مصر</li>
+          <li><i class="fas fa-phone"></i> +٢٠ ١٠ ٠٠٠ ٠٠٠٠</li>
+          <li><i class="fas fa-envelope"></i> info@v-cola.com</li>
+          <li><i class="fas fa-clock"></i> السبت – الخميس: ٩ص – ٦م</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ٢٠٢٥ V-Cola — جميع الحقوق محفوظة</p>
+      <p>صنع في مصر بكل فخر 🇪🇬</p>
+    </div>
+  </footer>
+
+  <div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lb-close" id="lbClose"><i class="fas fa-times"></i></div>
+    <img src="" alt="" id="lbImg">
+  </div>
+
+  <script>
+  /* ── Cursor glow ── */
+  const cg = document.getElementById('cursorGlow');
+  document.addEventListener('mousemove', e => {
+    cg.style.left = e.clientX + 'px';
+    cg.style.top  = e.clientY + 'px';
+  });
+
+  /* ── Burger ── */
+  const burger   = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  const overlay  = document.getElementById('overlay');
+  const toggleMenu = () => {
+    burger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+  };
+  burger.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    if (navLinks.classList.contains('active')) toggleMenu();
+  }));
+
+  /* ── Navbar scroll ── */
+  const navbar = document.getElementById('navbar');
+  const btt    = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    btt.classList.toggle('show', window.scrollY > 300);
+  });
+
+  /* ── Smooth scroll ── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior:'smooth', block:'start' }); }
+    });
+  });
+  document.getElementById('scrollCue')?.addEventListener('click', () => {
+    document.querySelector('.benefits-section')?.scrollIntoView({ behavior:'smooth' });
+  });
+  btt.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+  /* ── AOS observer ── */
+  const aosObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const delay = +(en.target.dataset.aosDelay || 0);
+      setTimeout(() => en.target.classList.add('aos-in'), delay);
+      aosObs.unobserve(en.target);
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('[data-aos]').forEach(el => aosObs.observe(el));
+
+  /* ── Counter animation ── */
+  let counted = false;
+  const countObs = new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting || counted) return;
+    counted = true;
+    document.querySelectorAll('.stat-number[data-target]').forEach(el => {
+      const end    = +el.dataset.target;
+      const suffix = el.dataset.suffix || '';
+      const dur    = 1800;
+      const fps    = 60;
+      const steps  = dur / (1000 / fps);
+      const inc    = end / steps;
+      let cur = 0;
+      const t = setInterval(() => {
+        cur = Math.min(cur + inc, end);
+        el.textContent = (cur < end) ? Math.floor(cur) + suffix : end + suffix;
+        if (cur >= end) clearInterval(t);
+      }, 1000 / fps);
+    });
+  }, { threshold: 0.4 });
+  const statsEl = document.querySelector('.stats-section');
+  if (statsEl) countObs.observe(statsEl);
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  /* ── Product buttons ── */
+  document.querySelectorAll('.btn-product').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const name = this.closest('.product-card')?.querySelector('.product-name')?.textContent || 'المنتج';
+      const orig = this.innerHTML;
+      this.innerHTML = '<i class="fas fa-check"></i> تمت الإضافة';
+      this.style.background = '#2d6a4f';
+      this.style.borderColor = '#2d6a4f';
+      this.style.color = '#fff';
+      setTimeout(() => { this.innerHTML = orig; this.style.cssText = ''; }, 2200);
+    });
+  });
+
+  /* ── Newsletter ── */
+  document.getElementById('nlForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('.nl-btn');
+    btn.innerHTML = '<i class="fas fa-check"></i> تم الاشتراك';
+    btn.style.background = '#2d6a4f';
+    btn.style.borderColor = '#2d6a4f';
+    btn.style.color = '#fff';
+    setTimeout(() => { btn.innerHTML = '<i class="fas fa-paper-plane"></i> اشتراك'; btn.style.cssText = ''; this.reset(); }, 3000);
+  });
+
+  /* ── Gallery lightbox ── */
+  const lb      = document.getElementById('lightbox');
+  const lbImg   = document.getElementById('lbImg');
+  const lbClose = document.getElementById('lbClose');
+  document.querySelectorAll('.g-item img').forEach(img => {
+    img.addEventListener('click', () => { lbImg.src = img.src; lb.classList.add('active'); });
+  });
+  lbClose.addEventListener('click', () => lb.classList.remove('active'));
+  lb.addEventListener('click', e => { if (e.target === lb) lb.classList.remove('active'); });
+  </script>
+</body>
+</html>
